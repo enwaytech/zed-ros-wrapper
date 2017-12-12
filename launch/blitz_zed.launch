@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <launch>
 <group>
-  <node pkg="tf" type="static_transform_publisher" name="zed_camera_broadcaster"
-        args="0 0 0 -1.5707963267948966 0 -1.5707963267948966 camera zed_initial_frame 100"/>
+  <!-- node pkg="tf" type="static_transform_publisher" name="zed_camera_broadcaster"
+        args="0 0 0 -1.5707963267948966 0 -1.5707963267948966 camera zed_current_frame 100"/-->
 
-  <node pkg="tf" type="static_transform_publisher" name="left_frame_publisher" args="0 0 0 0 0 0 zed_current_frame ZED_left_camera 100" />
+  <!--node pkg="tf" type="static_transform_publisher" name="left_frame_publisher" args="0 0 0 0 0 0 zed_current_frame ZED_left_camera 100" /-->
 
     <group ns="camera">
         <arg name="svo_file"              default="" />
